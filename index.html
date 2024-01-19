@@ -8,14 +8,20 @@
 </head>
 <body>
     <div class="container">
+        <div class="toggle-container">
+            <img src="/img/sol.png" alt="" id="toggle">
+        </div>
         <div class="screen">
-            <p id="show-result">0</p>
+            <!-- <p id="show-result">0</p> -->
+            <input type="text" placeholder="0" disabled class="screen" id="show-result">
         </div>
         <div class="buttons">
             <button class="buttons-top"  id="porcentaje">%</button>
-            <button class="buttons-top"  id="deleteAll">CE</button>
-            <button class="buttons-top"  id="deleteAll">C</button>
-            <button class="buttons-right" id="deleteByOne" ><-</button>
+            <button class="buttons-top deleteAll" >CE</button>
+            <button class="buttons-top deleteAll">C</button>
+            <button class="buttons-right" id="deleteByOne" >
+                <img src="/img/borrar.png">
+            </button>
         </div>
 
         <div class="buttons">
@@ -26,35 +32,34 @@
         </div>
 
         <div class="buttons">
-            <button id="numero7">7</button>
-            <button id="numero8">8</button>
-            <button id="numero9">9</button>
+            <button id="numero7" value="7">7</button>
+            <button id="numero8" value="8">8</button>
+            <button id="numero9" value="9">9</button>
             <button class="buttons-right" id="multiplicar">x</button>
         </div>
 
         <div class="buttons">
-            <button id="numero4">4</button>
-            <button id="numero5">5</button>
-            <button id="numero6">6</button>
+            <button id="numero4" value="4">4</button>
+            <button id="numero5" value="5">5</button>
+            <button id="numero6" value="6">6</button>
             <button class="buttons-right" id="restar">-</button>
         </div>
 
         <div class="buttons">
-            <button id="numero1">1</button>
-            <button id="numero2">2</button>
-            <button id="numero3">3</button>
+            <button id="numero1" value="1">1</button>
+            <button id="numero2" value="2">2</button>
+            <button id="numero3" value="3">3</button>
             <button class="buttons-right" id="sumar">+</button>
         </div>
 
         <div class="buttons">
             <button id="positivo-negativo">+/-</button>
-            <button id="cero">0</button>
+            <button id="numero0" value="0">0</button>
             <button id="decimal">.</button>
             <button class="buttons-right" id="resultado">=</button>
         </div>
 
     </div>
-
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>

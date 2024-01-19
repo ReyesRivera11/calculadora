@@ -49,11 +49,37 @@
     background-color: rgb(66, 108, 133);
     color: black;
 }
-
+.img-delete{
+    width: 32px;
+    color: white;
+    background-color: aqua;
+}
 .buttons .buttons-right{
     background-color: rgb(27, 66, 110);
 }
 .buttons .buttons-top{
     background-color: rgb(156, 218, 229);
+}
+#show-result{
+    border: none;
+    width: 80%;
+    font-size: 20px;
+}
+/* Toggle */
+#toggle{
+    width: 32px;
+    cursor: pointer;
+    transform: translate(-10%,-40%);
+}
+.toggle-container{
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    width: 80%;
+}
+
+/* Modo obscuro */
+.dark .container{
+    background-color: black;
 }
 
